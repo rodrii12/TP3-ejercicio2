@@ -1,7 +1,10 @@
 package tp3_sanasana;
 
+import java.time.format.DateTimeFormatter;
+
 public class Paciente extends Persona{
     private String grupoSanguineo;
+    private HistoriaClinica hc1;
     
     public Paciente() {
     }
@@ -11,12 +14,31 @@ public class Paciente extends Persona{
         this.grupoSanguineo = grupoSanguineo;
     }
 
+
     public String getGrupoSanguineo() {
         return grupoSanguineo;
     }
 
-    public void setGrupoSanguineo(String grupoSanguineo) {
-        this.grupoSanguineo = grupoSanguineo;
+    public Paciente(HistoriaClinica hc1) {
+        this.hc1 = hc1;
     }
+
+    public HistoriaClinica getHc1() {
+        return hc1;
+    }
+
+    public void setHc1(HistoriaClinica hc1) {
+        this.hc1 = hc1;
+    }
+
+    public DateTimeFormatter getFechanacimiento() {
+        return fechanacimiento;
+    }
+
+    public void setFechanacimiento(DateTimeFormatter fechanacimiento) {
+        this.fechanacimiento = fechanacimiento;
+    }
+    
+
     
 }

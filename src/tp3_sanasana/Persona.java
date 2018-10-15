@@ -3,7 +3,7 @@ package tp3_sanasana;
 import java.time.format.DateTimeFormatter;
 
 
-public class Persona {
+public abstract class Persona {
     private String apellido;
     private String nombre;
     private Integer documento;
@@ -91,5 +91,7 @@ public class Persona {
     public void setFechanacimiento(DateTimeFormatter fechanacimiento) {
         this.fechanacimiento = fechanacimiento;
     }
+    
+    
     
 }
